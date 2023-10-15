@@ -12,6 +12,12 @@
 		0BE764122AD8582E00643AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE764112AD8582E00643AE6 /* ContentView.swift */; };
 		0BE764142AD8582F00643AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE764132AD8582F00643AE6 /* Assets.xcassets */; };
 		0BE764172AD8582F00643AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE764162AD8582F00643AE6 /* Preview Assets.xcassets */; };
+		0BE764222AD87FB000643AE6 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE764212AD87FB000643AE6 /* TunerView.swift */; };
+		0BE764242AD88F6400643AE6 /* AudioProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE764232AD88F6400643AE6 /* AudioProcessor.swift */; };
+		0BE764282AD8ABAD00643AE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE764262AD8AB8500643AE6 /* AVFoundation.framework */; };
+		0BE7642C2AD8C64300643AE6 /* FrequencyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7642B2AD8C64300643AE6 /* FrequencyHandler.swift */; };
+		0BE7642E2AD8CA9500643AE6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE7642D2AD8CA9500643AE6 /* Accelerate.framework */; };
+		0BE764302AD9B0A200643AE6 /* TunerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7642F2AD9B0A200643AE6 /* TunerHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		0BE764112AD8582E00643AE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BE764132AD8582F00643AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BE764162AD8582F00643AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BE764212AD87FB000643AE6 /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
+		0BE764232AD88F6400643AE6 /* AudioProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessor.swift; sourceTree = "<group>"; };
+		0BE764262AD8AB8500643AE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		0BE7642B2AD8C64300643AE6 /* FrequencyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyHandler.swift; sourceTree = "<group>"; };
+		0BE7642D2AD8CA9500643AE6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		0BE7642F2AD9B0A200643AE6 /* TunerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE764282AD8ABAD00643AE6 /* AVFoundation.framework in Frameworks */,
+				0BE7642E2AD8CA9500643AE6 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 			children = (
 				0BE7640E2AD8582E00643AE6 /* GuitarTuner Watch App */,
 				0BE764052AD8582E00643AE6 /* Products */,
+				0BE764252AD8AB8500643AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +97,10 @@
 				0BE764112AD8582E00643AE6 /* ContentView.swift */,
 				0BE764132AD8582F00643AE6 /* Assets.xcassets */,
 				0BE764152AD8582F00643AE6 /* Preview Content */,
+				0BE764212AD87FB000643AE6 /* TunerView.swift */,
+				0BE764232AD88F6400643AE6 /* AudioProcessor.swift */,
+				0BE7642B2AD8C64300643AE6 /* FrequencyHandler.swift */,
+				0BE7642F2AD9B0A200643AE6 /* TunerHandler.swift */,
 			);
 			path = "GuitarTuner Watch App";
 			sourceTree = "<group>";
@@ -92,6 +111,15 @@
 				0BE764162AD8582F00643AE6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BE764252AD8AB8500643AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE7642D2AD8CA9500643AE6 /* Accelerate.framework */,
+				0BE764262AD8AB8500643AE6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE764242AD88F6400643AE6 /* AudioProcessor.swift in Sources */,
+				0BE7642C2AD8C64300643AE6 /* FrequencyHandler.swift in Sources */,
+				0BE764302AD9B0A200643AE6 /* TunerHandler.swift in Sources */,
 				0BE764122AD8582E00643AE6 /* ContentView.swift in Sources */,
 				0BE764102AD8582E00643AE6 /* GuitarTunerApp.swift in Sources */,
+				0BE764222AD87FB000643AE6 /* TunerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O afinador precisa de permissão de acesso ao microfone para poder detectar o som emitido pelo seu instrumento.";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -315,6 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O afinador precisa de permissão de acesso ao microfone para poder detectar o som emitido pelo seu instrumento.";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -334,6 +368,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = GuitarTuner;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O afinador precisa de permissão de acesso ao microfone para poder detectar o som emitido pelo seu instrumento.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -364,6 +399,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = GuitarTuner;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "O afinador precisa de permissão de acesso ao microfone para poder detectar o som emitido pelo seu instrumento.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
