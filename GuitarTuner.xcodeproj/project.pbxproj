@@ -3,21 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB56A7D2AE33EA600A949A0 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A7C2AE33EA600A949A0 /* Frequency.swift */; };
+		0BB56A7F2AE33ED000A949A0 /* ModifierPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A7E2AE33ED000A949A0 /* ModifierPreference.swift */; };
+		0BB56A812AE33EE100A949A0 /* ScaleNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A802AE33EE100A949A0 /* ScaleNote.swift */; };
+		0BB56A832AE33EF700A949A0 /* TunerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A822AE33EF700A949A0 /* TunerData.swift */; };
+		0BB56A862AE3458300A949A0 /* MicrophonePitchDetector in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB56A852AE3458300A949A0 /* MicrophonePitchDetector */; };
 		0BE7640B2AD8582E00643AE6 /* GuitarTuner Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0BE7640A2AD8582E00643AE6 /* GuitarTuner Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BE764102AD8582E00643AE6 /* GuitarTunerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7640F2AD8582E00643AE6 /* GuitarTunerApp.swift */; };
 		0BE764122AD8582E00643AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE764112AD8582E00643AE6 /* ContentView.swift */; };
 		0BE764142AD8582F00643AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE764132AD8582F00643AE6 /* Assets.xcassets */; };
 		0BE764172AD8582F00643AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE764162AD8582F00643AE6 /* Preview Assets.xcassets */; };
 		0BE764222AD87FB000643AE6 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE764212AD87FB000643AE6 /* TunerView.swift */; };
-		0BE764242AD88F6400643AE6 /* AudioProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE764232AD88F6400643AE6 /* AudioProcessor.swift */; };
 		0BE764282AD8ABAD00643AE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE764262AD8AB8500643AE6 /* AVFoundation.framework */; };
-		0BE7642C2AD8C64300643AE6 /* FrequencyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7642B2AD8C64300643AE6 /* FrequencyHandler.swift */; };
 		0BE7642E2AD8CA9500643AE6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE7642D2AD8CA9500643AE6 /* Accelerate.framework */; };
-		0BE764302AD9B0A200643AE6 /* TunerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE7642F2AD9B0A200643AE6 /* TunerHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0BB56A7C2AE33EA600A949A0 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		0BB56A7E2AE33ED000A949A0 /* ModifierPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierPreference.swift; sourceTree = "<group>"; };
+		0BB56A802AE33EE100A949A0 /* ScaleNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleNote.swift; sourceTree = "<group>"; };
+		0BB56A822AE33EF700A949A0 /* TunerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerData.swift; sourceTree = "<group>"; };
 		0BE764042AD8582E00643AE6 /* GuitarTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE7640A2AD8582E00643AE6 /* GuitarTuner Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuitarTuner Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE7640F2AD8582E00643AE6 /* GuitarTunerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarTunerApp.swift; sourceTree = "<group>"; };
@@ -52,11 +58,8 @@
 		0BE764132AD8582F00643AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BE764162AD8582F00643AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BE764212AD87FB000643AE6 /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
-		0BE764232AD88F6400643AE6 /* AudioProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessor.swift; sourceTree = "<group>"; };
 		0BE764262AD8AB8500643AE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		0BE7642B2AD8C64300643AE6 /* FrequencyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyHandler.swift; sourceTree = "<group>"; };
 		0BE7642D2AD8CA9500643AE6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		0BE7642F2AD9B0A200643AE6 /* TunerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +69,24 @@
 			files = (
 				0BE764282AD8ABAD00643AE6 /* AVFoundation.framework in Frameworks */,
 				0BE7642E2AD8CA9500643AE6 /* Accelerate.framework in Frameworks */,
+				0BB56A862AE3458300A949A0 /* MicrophonePitchDetector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB56A7B2AE33E9400A949A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BB56A7C2AE33EA600A949A0 /* Frequency.swift */,
+				0BB56A7E2AE33ED000A949A0 /* ModifierPreference.swift */,
+				0BB56A802AE33EE100A949A0 /* ScaleNote.swift */,
+				0BB56A822AE33EF700A949A0 /* TunerData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0BE763FD2AD8582D00643AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -93,14 +108,12 @@
 		0BE7640E2AD8582E00643AE6 /* GuitarTuner Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				0BB56A7B2AE33E9400A949A0 /* Models */,
 				0BE7640F2AD8582E00643AE6 /* GuitarTunerApp.swift */,
 				0BE764112AD8582E00643AE6 /* ContentView.swift */,
 				0BE764132AD8582F00643AE6 /* Assets.xcassets */,
 				0BE764152AD8582F00643AE6 /* Preview Content */,
 				0BE764212AD87FB000643AE6 /* TunerView.swift */,
-				0BE764232AD88F6400643AE6 /* AudioProcessor.swift */,
-				0BE7642B2AD8C64300643AE6 /* FrequencyHandler.swift */,
-				0BE7642F2AD9B0A200643AE6 /* TunerHandler.swift */,
 			);
 			path = "GuitarTuner Watch App";
 			sourceTree = "<group>";
@@ -155,6 +168,9 @@
 			dependencies = (
 			);
 			name = "GuitarTuner Watch App";
+			packageProductDependencies = (
+				0BB56A852AE3458300A949A0 /* MicrophonePitchDetector */,
+			);
 			productName = "GuitarTuner Watch App";
 			productReference = 0BE7640A2AD8582E00643AE6 /* GuitarTuner Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 0BE763FD2AD8582D00643AE6;
+			packageReferences = (
+				0BB56A842AE3458300A949A0 /* XCLocalSwiftPackageReference "../Swift Packages/MicrophonePitchDetector" */,
+			);
 			productRefGroup = 0BE764052AD8582E00643AE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,12 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE764242AD88F6400643AE6 /* AudioProcessor.swift in Sources */,
-				0BE7642C2AD8C64300643AE6 /* FrequencyHandler.swift in Sources */,
-				0BE764302AD9B0A200643AE6 /* TunerHandler.swift in Sources */,
+				0BB56A832AE33EF700A949A0 /* TunerData.swift in Sources */,
+				0BB56A7F2AE33ED000A949A0 /* ModifierPreference.swift in Sources */,
+				0BB56A812AE33EE100A949A0 /* ScaleNote.swift in Sources */,
 				0BE764122AD8582E00643AE6 /* ContentView.swift in Sources */,
 				0BE764102AD8582E00643AE6 /* GuitarTunerApp.swift in Sources */,
 				0BE764222AD87FB000643AE6 /* TunerView.swift in Sources */,
+				0BB56A7D2AE33EA600A949A0 /* Frequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +503,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0BB56A842AE3458300A949A0 /* XCLocalSwiftPackageReference "../Swift Packages/MicrophonePitchDetector" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Swift Packages/MicrophonePitchDetector";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BB56A852AE3458300A949A0 /* MicrophonePitchDetector */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MicrophonePitchDetector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BE763FE2AD8582D00643AE6 /* Project object */;
 }
