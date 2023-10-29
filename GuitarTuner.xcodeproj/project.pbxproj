@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0B223AB12AED853F00B58AAF /* MicrophonePitchDetector in Frameworks */ = {isa = PBXBuildFile; productRef = 0B223AB02AED853F00B58AAF /* MicrophonePitchDetector */; };
 		0B223AB32AED853F00B58AAF /* pitchbench in Frameworks */ = {isa = PBXBuildFile; productRef = 0B223AB22AED853F00B58AAF /* pitchbench */; };
+		0B223AB62AED88D600B58AAF /* DisplayTuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B223AB52AED88D600B58AAF /* DisplayTuneView.swift */; };
+		0B223AB82AED898B00B58AAF /* PitchScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B223AB72AED898B00B58AAF /* PitchScaleView.swift */; };
+		0B223ABA2AED92C400B58AAF /* FretView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B223AB92AED92C400B58AAF /* FretView.swift */; };
+		0B223ABC2AEDA1F700B58AAF /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B223ABB2AEDA1F700B58AAF /* AppColors.swift */; };
+		0B223ABE2AEDE13B00B58AAF /* ViewOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B223ABD2AEDE13B00B58AAF /* ViewOffsetKey.swift */; };
 		0BB56A7D2AE33EA600A949A0 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A7C2AE33EA600A949A0 /* Frequency.swift */; };
 		0BB56A7F2AE33ED000A949A0 /* ModifierPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A7E2AE33ED000A949A0 /* ModifierPreference.swift */; };
 		0BB56A812AE33EE100A949A0 /* ScaleNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56A802AE33EE100A949A0 /* ScaleNote.swift */; };
@@ -49,6 +54,11 @@
 
 /* Begin PBXFileReference section */
 		0B223AA62AED837000B58AAF /* MicrophonePitchDetector */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MicrophonePitchDetector; sourceTree = "<group>"; };
+		0B223AB52AED88D600B58AAF /* DisplayTuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTuneView.swift; sourceTree = "<group>"; };
+		0B223AB72AED898B00B58AAF /* PitchScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchScaleView.swift; sourceTree = "<group>"; };
+		0B223AB92AED92C400B58AAF /* FretView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretView.swift; sourceTree = "<group>"; };
+		0B223ABB2AEDA1F700B58AAF /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		0B223ABD2AEDE13B00B58AAF /* ViewOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOffsetKey.swift; sourceTree = "<group>"; };
 		0BB56A7C2AE33EA600A949A0 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
 		0BB56A7E2AE33ED000A949A0 /* ModifierPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierPreference.swift; sourceTree = "<group>"; };
 		0BB56A802AE33EE100A949A0 /* ScaleNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleNote.swift; sourceTree = "<group>"; };
@@ -87,6 +97,17 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		0B223AB42AED889F00B58AAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B223AB52AED88D600B58AAF /* DisplayTuneView.swift */,
+				0B223AB72AED898B00B58AAF /* PitchScaleView.swift */,
+				0B223AB92AED92C400B58AAF /* FretView.swift */,
+				0B223ABD2AEDE13B00B58AAF /* ViewOffsetKey.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0BB56A7B2AE33E9400A949A0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +140,7 @@
 		0BE7640E2AD8582E00643AE6 /* GuitarTuner Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				0B223AB42AED889F00B58AAF /* Views */,
 				0B223AA02AED822200B58AAF /* Packages */,
 				0BB56A7B2AE33E9400A949A0 /* Models */,
 				0BE7640F2AD8582E00643AE6 /* GuitarTunerApp.swift */,
@@ -126,6 +148,7 @@
 				0BE764132AD8582F00643AE6 /* Assets.xcassets */,
 				0BE764152AD8582F00643AE6 /* Preview Content */,
 				0BE764212AD87FB000643AE6 /* TunerView.swift */,
+				0B223ABB2AEDA1F700B58AAF /* AppColors.swift */,
 			);
 			path = "GuitarTuner Watch App";
 			sourceTree = "<group>";
@@ -253,11 +276,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BB56A832AE33EF700A949A0 /* TunerData.swift in Sources */,
+				0B223ABA2AED92C400B58AAF /* FretView.swift in Sources */,
 				0BB56A7F2AE33ED000A949A0 /* ModifierPreference.swift in Sources */,
 				0BB56A812AE33EE100A949A0 /* ScaleNote.swift in Sources */,
+				0B223ABC2AEDA1F700B58AAF /* AppColors.swift in Sources */,
+				0B223ABE2AEDE13B00B58AAF /* ViewOffsetKey.swift in Sources */,
 				0BE764122AD8582E00643AE6 /* ContentView.swift in Sources */,
 				0BE764102AD8582E00643AE6 /* GuitarTunerApp.swift in Sources */,
+				0B223AB62AED88D600B58AAF /* DisplayTuneView.swift in Sources */,
 				0BE764222AD87FB000643AE6 /* TunerView.swift in Sources */,
+				0B223AB82AED898B00B58AAF /* PitchScaleView.swift in Sources */,
 				0BB56A7D2AE33EA600A949A0 /* Frequency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
