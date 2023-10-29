@@ -47,6 +47,9 @@ public final class MicrophonePitchDetector: ObservableObject {
     }
     
     public func stop() -> Void {
+        
+        guard isRunning else {return}
+                
         engine.stop()
         tracker.stop()
         isRunning = false
