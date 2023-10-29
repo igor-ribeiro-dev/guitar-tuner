@@ -51,6 +51,10 @@ final class AudioEngine {
     func start() throws {
         try avEngine.start()
     }
+    
+    func stop() {
+        avEngine.stop()
+    }
 
 #if !os(macOS)
     /// Configures the audio session

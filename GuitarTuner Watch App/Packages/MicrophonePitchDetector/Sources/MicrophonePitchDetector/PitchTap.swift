@@ -49,4 +49,8 @@ final class PitchTap {
             self.handler(pitch)
         }
     }
+    
+    func stop() -> Void {
+        input.removeTap(onBus: 0)
+    }
 }

@@ -45,4 +45,10 @@ public final class MicrophonePitchDetector: ObservableObject {
         try engine.start()
         tracker.start()
     }
+    
+    public func stop() -> Void {
+        engine.stop()
+        tracker.stop()
+        isRunning = false
+    }
 }

@@ -57,7 +57,7 @@ struct DisplayTuneView: View {
             self.frequencyMeasurement = roundFrequencyMeasurement(
                 frequency: tunerData.closestNote.frequency.measurement
             )
-                        
+            
             resetTimer()
             
             withAnimation(.easeInOut) {
@@ -65,6 +65,14 @@ struct DisplayTuneView: View {
             }
         })
         .ignoresSafeArea(edges: [.horizontal, .top])
+        .onReceive(NotificationCenter.default.publisher(for: WKExtension.applicationWillEnterForegroundNotification)) { _ in
+            Task {
+                try await pitchDetector.activate()
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: WKExtension.applicationWillResignActiveNotification)) { _ in
+            pitchDetector.stop()
+        }
     }
     
     func getBackgroundColor(by distance: Float) -> Color {
